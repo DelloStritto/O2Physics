@@ -627,7 +627,7 @@ struct HfCandidateCreator3ProngExpressions {
         /// at least one event selection not satisfied --> reject the gen particle
         rowMcMatchGen(flag, origin, channel);
         continue;
-       }
+      }
 
       // D± → π± K∓ π±
       if (createDplus) {
