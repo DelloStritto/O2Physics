@@ -218,7 +218,7 @@ struct HfEventSelectionMc {
   template <typename TBc, typename TMcColl>
   uint8_t getHfMcCollisionRejectionMask(TMcColl const& mcCollision)
   {
-    uint8_t rejectionMask{0};
+    uint16_t rejectionMask{0};
     float zPv = mcCollision.posZ();
     auto bc = mcCollision.template bc_as<TBc>();
 
