@@ -196,7 +196,7 @@ struct HfEventSelection : o2::framework::ConfigurableGroup {
 
 namespace o2::hf_evsel_mc
 {
-// generated particles rejection types
+// MC collision rejection types
 enum McCollisionRejection {
   None = 0,
   TimeFrameBorderCut,
