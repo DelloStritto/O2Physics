@@ -241,9 +241,7 @@ struct HfEventSelectionMc {
     auto bc = mcCollision.template bc_as<TBc>();
 
     /// TVX trigger selection
-    if (useSel8Trigger && (!bc.selection_bit(o2::aod::evsel::kIsTriggerTVX)
-                        || !bc.selection_bit(o2::aod::evsel::kNoTimeFrameBorder)
-                        || !bc.selection_bit(o2::aod::evsel::kNoITSROFrameBorder))) {
+    if (useSel8Trigger && (!bc.selection_bit(o2::aod::evsel::kIsTriggerTVX) || !bc.selection_bit(o2::aod::evsel::kNoTimeFrameBorder) || !bc.selection_bit(o2::aod::evsel::kNoITSROFrameBorder))) {
       SETBIT(rejectionMask, McCollisionRejection::Trigger);
     }
     /// TVX trigger selection
