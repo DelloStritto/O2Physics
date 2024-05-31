@@ -216,7 +216,7 @@ struct HfEventSelectionMc {
   /// \param mcCollision is the analysed mc collision
   /// \return a bitmask with the event selections not satisfied by the analysed collision
   template <typename TBc, typename TMcColl>
-  uint16_t getHfMcCollisionRejectionMask(TMcColl const& mcCollision)
+  uint8_t getHfMcCollisionRejectionMask(TMcColl const& mcCollision)
   {
     uint8_t rejectionMask{0};
     float zPv = mcCollision.posZ();
