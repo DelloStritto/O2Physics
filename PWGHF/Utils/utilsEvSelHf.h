@@ -207,7 +207,7 @@ enum McCollisionRejection {
 
 struct HfEventSelectionMc {
   // event selection parameters (in chronological order of application)
-  bool useItsRoBorderCut{false};    // Apply the ITS RO frame border cut
+  bool useItsRofBorderCut{false};    // Apply the ITS RO frame border cut
   bool useTimeFrameBorderCut{true}; // Apply TF border cut
   float zPvPosMin{-1000.f};         // Minimum PV posZ (cm)
   float zPvPosMax{1000.f};          // Maximum PV posZ (cm)
