@@ -213,7 +213,7 @@ struct HfEventSelectionMc {
   float zPvPosMax{1000.f};          // Maximum PV posZ (cm)
 
   /// \brief Function to apply event selections to generated MC collisions
-  /// \param mcCollision is the analysed mc collision
+  /// \param mcCollision MC collision to test against the selection criteria
   /// \return a bitmask with the event selections not satisfied by the analysed collision
   template <typename TBc, typename TMcColl>
   uint8_t getHfMcCollisionRejectionMask(TMcColl const& mcCollision)
